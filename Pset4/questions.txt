@@ -1,0 +1,19 @@
+0.  JPEG 16M,  Gif 256,  PNG 256 teracolors, BMP 16M
+1.  .gif supports animation
+2.  Lossy permanently reduces the data, Losslessloses nothing when uncompressed as the name implies.
+3.  JPEG is lossy-compressed
+4.  The system modifies the first character in the filename to signify that it has been deleted. The FAT system moves the file's cluster into the list of free files. THE DATA IS STILL THERE!
+5.  Fill the disk with ASCII NUL bytes. Or, you know, suitcase nuke will work too.
+6.  A header file about/containing/enabling use of integers of varying byte widths.
+7.  For when you're trying to reach a specific distance or measurement of byte width in a file.
+8.  Byte = 8 bits, 1 byte | Dword = 32 bits, 4 bytes | Long = signed 32 bits, 4 bytes | Word = 16 bits, 2 bytes
+9.  ASCII: BM
+10. bfsize - size in bytes of the whole BMP file. bisize - size in bytes of the image
+11. Bitmap is a Top-Down Device Independent Bitmap and its origin is in the top-left corner. 
+12. biBitCount = bits per pixel
+13. General sanity/error check. Misspelled or erronious filename, too big, etc.
+14. Iterates over each singular pixel as determined by sizeof(RGBTRIPLE)
+15. (4 - (3 * sizeof(RGBTRIPLE)) % 4) % 4
+16. Sets the position of the file/stream to the given offset.
+17. Current position of the file pointer.
+18. Rob

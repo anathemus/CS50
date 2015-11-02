@@ -1,0 +1,20 @@
+0.  the longest word, but artificial said to mean a lung disease caused by inhaling very fine ash and sand dust.
+1.  gets resource usage measures more specifically how long a call or function takes.
+2.  2, the int "who" and the pointer to the usage.
+3.  pointers hold their values because the memory address transfers outside the brackets/function.
+4.  Main first checks the times for loading, spell checking, finding the size of the file, and unloading. Then loads
+    either the selected or default dictionary and gives the load time for the dictionary. Checks for errors opening
+    the text to be checked, then opens. Checks the text against the dictionary for misspellings and gives the
+    runtime on said spelling check. Makes sure that the word checked is actually a word, accepting characters and 
+    apostrophes. Verifies that there are no numbers in the word. If the word is indeed a word, spell check it!
+    The size of the dictionary used is then checked, and finally the dictionary file used is unloaded.
+5.  With fgetc, you can keep track of the number of characters in the word. otherwise you might malloc too much
+    or too little and get a seg-fault. Which is fun.
+6.  So you don't alter the dictionary or word to be checked.
+7.  I used the glorious trie! I liked the concept much better than a hashtable for the exercise even if it took
+    more head-wrapping than King Tut. The nodes are simple. nodes 0-26 (27, where the apostrophe sits) and
+    a pointer to then next node in the word-branch. 0-25 are de-coded much like week 2 by subtracting lowercase a, 
+    and tolower().
+8.  it chugged along to near crash with a small dictionary.
+9.  fixed malloc. just because there's 27 nodes, doesn't mean that number goes everywhere.
+10. I'm really happy with the performance time. :)
